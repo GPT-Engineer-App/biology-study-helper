@@ -16,6 +16,30 @@ const Cells = () => {
         <Text fontSize="md" textAlign="center">
           This section will delve into the unique characteristics that differentiate various types of cells.
         </Text>
+        <Heading as="h3" size="md" textAlign="center">
+          Summary Notes
+        </Heading>
+        <Text fontSize="md" textAlign="center">
+          - Investigate different cellular structures, including but not limited to:
+        </Text>
+        <Text fontSize="md" textAlign="center">
+          - Examining a variety of prokaryotic and eukaryotic cells (ACSBL032, ACSBL048)
+        </Text>
+        <Text fontSize="md" textAlign="center">
+          - Describe a range of technologies that are used to determine a cell’s structure and function
+        </Text>
+        <Text fontSize="md" textAlign="center">
+          - Investigate a variety of prokaryotic and eukaryotic cell structures, including but not limited to:
+        </Text>
+        <Text fontSize="md" textAlign="center">
+          - Drawing scaled diagrams of a variety of cells (ACSBL035)
+        </Text>
+        <Text fontSize="md" textAlign="center">
+          - Comparing and contrasting different cell organelles and arrangements
+        </Text>
+        <Text fontSize="md" textAlign="center">
+          - Modelling the structure and function of the fluid mosaic model of the cell membrane (ACSBL045)
+        </Text>
         <Heading as="h2" size="lg" textAlign="center">
           IQ2: How do cells coordinate activities within their internal environment and the external environment?
         </Heading>
