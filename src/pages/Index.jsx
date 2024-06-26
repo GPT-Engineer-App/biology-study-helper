@@ -1,5 +1,5 @@
 import { Container, VStack, Heading, Text, Box, Button } from "@chakra-ui/react";
-import { FaBook, FaMicroscope, FaLeaf, FaTree, FaGlobe } from "react-icons/fa";
+import { FaMicroscope, FaTree, FaGlobe } from "react-icons/fa";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const Index = () => {
@@ -15,24 +15,14 @@ const Index = () => {
           Welcome to your study resource for Year 11 Preliminary Biology. Explore the topics and deepen your understanding.
         </Text>
         <Box display="flex" flexDirection="column" alignItems="center" width="100%">
-          <Button leftIcon={<FaBook />} colorScheme="teal" variant="solid" width="100%" mb={4}>
-            Introduction to Biology
-          </Button>
-          <Button leftIcon={<FaMicroscope />} colorScheme="teal" variant="solid" width="100%" mb={4}>
-            Cell Structure and Function
-          </Button>
-          <Button leftIcon={<FaLeaf />} colorScheme="teal" variant="solid" width="100%" mb={4}>
-            Plant Biology
-          </Button>
-          <Button leftIcon={<FaMicroscope />} colorScheme="teal" variant="solid" width="100%" mb={4} onClick={() => navigate('/cells')}> {/* Add onClick to navigate to Cells page */}
+          
+          <Button leftIcon={<FaMicroscope />} colorScheme="teal" variant="solid" width="100%" mb={4} onClick={() => navigate('/cells')}>
             Cells as the Basis of Life
           </Button>
           <Button leftIcon={<FaTree />} colorScheme="teal" variant="solid" width="100%" mb={4}>
             Organisation of Living Things
           </Button>
-          <Button leftIcon={<FaLeaf />} colorScheme="teal" variant="solid" width="100%" mb={4}>
-            Biological Diversity
-          </Button>
+          
           <Button leftIcon={<FaGlobe />} colorScheme="teal" variant="solid" width="100%">
             Ecosystem Dynamics
           </Button>
