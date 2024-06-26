@@ -1,7 +1,10 @@
 import { Container, VStack, Heading, Text, Box, Button } from "@chakra-ui/react";
 import { FaBook, FaMicroscope, FaLeaf, FaTree, FaGlobe } from "react-icons/fa";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const Index = () => {
+  const navigate = useNavigate(); // Initialize useNavigate
+
   return (
     <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
       <VStack spacing={8}>
@@ -21,7 +24,7 @@ const Index = () => {
           <Button leftIcon={<FaLeaf />} colorScheme="teal" variant="solid" width="100%" mb={4}>
             Plant Biology
           </Button>
-          <Button leftIcon={<FaMicroscope />} colorScheme="teal" variant="solid" width="100%" mb={4}>
+          <Button leftIcon={<FaMicroscope />} colorScheme="teal" variant="solid" width="100%" mb={4} onClick={() => navigate('/cells')}> {/* Add onClick to navigate to Cells page */}
             Cells as the Basis of Life
           </Button>
           <Button leftIcon={<FaTree />} colorScheme="teal" variant="solid" width="100%" mb={4}>
