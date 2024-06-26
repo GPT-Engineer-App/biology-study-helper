@@ -1,5 +1,5 @@
 import { Container, VStack, Heading, Text, Box, Button } from "@chakra-ui/react";
-import { FaBook, FaMicroscope, FaLeaf } from "react-icons/fa";
+import { FaBook, FaMicroscope, FaLeaf, FaTree, FaGlobe } from "react-icons/fa";
 
 const Index = () => {
   return (
@@ -18,8 +18,20 @@ const Index = () => {
           <Button leftIcon={<FaMicroscope />} colorScheme="teal" variant="solid" width="100%" mb={4}>
             Cell Structure and Function
           </Button>
-          <Button leftIcon={<FaLeaf />} colorScheme="teal" variant="solid" width="100%">
+          <Button leftIcon={<FaLeaf />} colorScheme="teal" variant="solid" width="100%" mb={4}>
             Plant Biology
+          </Button>
+          <Button leftIcon={<FaMicroscope />} colorScheme="teal" variant="solid" width="100%" mb={4}>
+            Cells as the Basis of Life
+          </Button>
+          <Button leftIcon={<FaTree />} colorScheme="teal" variant="solid" width="100%" mb={4}>
+            Organisation of Living Things
+          </Button>
+          <Button leftIcon={<FaLeaf />} colorScheme="teal" variant="solid" width="100%" mb={4}>
+            Biological Diversity
+          </Button>
+          <Button leftIcon={<FaGlobe />} colorScheme="teal" variant="solid" width="100%">
+            Ecosystem Dynamics
           </Button>
         </Box>
       </VStack>
